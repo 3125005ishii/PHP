@@ -2,25 +2,35 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-<title>ＰＨＰ基礎</title>
+<title>会員登録</title>
     </head>
     <body>
-        <?php
-        <?php
-$nickname=$_POST['nickname'];
+<?php
+$name=$_POST['name'];
+$pass=$_POST['pass'];
 $email=$_POST['email'];
-$goiken=$_POST['goiken'];
-$nickname= htmlspecialchars($nickname);
+$address=$_POST['address'];
+$name= htmlspecialchars($name);
+$pass= htmlspecialchars($pass);
 $email= htmlspecialchars($email);
-$goiken= htmlspecialchars($goiken);
-if($nickname=='')
+$address= htmlspecialchars($address);
+if($name=='')
     {
-print 'ニックネームが入力されていません。<br>';
+print '会員名が入力されていません。<br>';
 }
 else
 {
 print 'ようこそ';
-print $nickname;
+print $name;
+print '様';print '<br>';
+if($pass=='')
+    {
+print 'パスワードが入力されていません。<br>';
+}
+else
+{
+print 'ようこそ';
+print $pass;
 print '様';print '<br>';
 if($email=='')
 {
@@ -31,14 +41,14 @@ print 'メールアドレス:';
 print $email;
 print '<br>';
 }
-if($goiken=='')
+if($address=='')
 {
-print 'ご意見が入力されていません。<br>';
+print '住所が入力されていません。<br>';
 }
 else
 {
-print 'ご意見[';
-print $goiken;
+print '住所：[';
+print $address;
 print '] <br>';
 }
 }

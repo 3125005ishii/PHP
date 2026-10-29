@@ -6,13 +6,15 @@
 </head>
 <body>
 <?php
-$nickname=$_POST['nickname'];
+$name=$_POST['name'];
+$pass=$_POST['pass'];
 $email=$_POST['email'];
-$goiken=$_POST['goiken'];
-$nickname= htmlspecialchars($nickname);
+$address=$_POST['address'];
+$name= htmlspecialchars($name);
+$pass= htmlspecialchars($pass);
 $email= htmlspecialchars($email);
-$goiken= htmlspecialchars($goiken);
-print $nickname;
+$address= htmlspecialchars($address);
+print $name;
 print '様<br>';
 print 'ご意見ありがとうございました<br>';
 print '頂いたご意見『';
