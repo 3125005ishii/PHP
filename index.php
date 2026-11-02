@@ -10,3 +10,5 @@
     <a href="member_add.html">会員登録</a>
   </body>
 </html>
+<a href="ichiran.php">アンケート一覧表示</a>
+<br><br><br>
